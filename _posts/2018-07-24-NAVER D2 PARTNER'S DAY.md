@@ -94,3 +94,5 @@ author: leegwangyong
 - iOS Tip : Memory management, Life Cycle, Observer, Data Structure, Retain Cycle, Meaning of keyword
 
 D2 Campus Fest 11월 예정
+
+후기 : 취업 준비를 해야하는 저에게는 개발자의 커리어에 대한 내용이 매우 유익하였습니다. 자신의 이력을 계속 정리, 갱신해야한다는 것을 배웠습니다. 네트워킹 시간에는 흥미로운 내용들을 접할 수 있는 좋은 기회였습니다.
