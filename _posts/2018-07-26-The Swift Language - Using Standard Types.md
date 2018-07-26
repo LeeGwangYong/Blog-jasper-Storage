@@ -101,10 +101,10 @@ instance를 만들기위한 다른 방법으로는 타입의 **initializer**를 
 어떤 standard type은 인자가 들어가지 않을때, 빈 literal을 반환하는 initializer를 가지고 있습니다.
 
 ```swift
-let emptyString = String()				// ""
+let emptyString = String()			// ""
 let emptyArrayOfInts = [Int]() 			// 0 elements
 let emptySetOfFloats = Set<Float>()		// 0 elements
-let defaultBool = Bool()				// false
+let defaultBool = Bool()			// false
 ```
 
 타입은 여러개의 initializer를 가질 수 있습니다.
@@ -130,3 +130,8 @@ print(meaningOfLife.isEmpty)
 var arrayOfInts = ["one", "two"]
 arrayOfInts.append("three")
 ```
+
+> 관련 사이트
+>
+> - [http://developer.apple.com/swift](http://developer.apple.com/swift)
+> - [Swift 언어 개발 문서](http://swift.leantra.kr)

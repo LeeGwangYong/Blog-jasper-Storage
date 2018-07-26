@@ -28,4 +28,9 @@ Swift의 "primitve" type(Numbers, Boolean etc)의 모두 Struct로 구현되어�
 
 위 type들 또한 protocol을 따르고 확장(extension)되어질 수 있습니다.
 
-> 관련 사이트 : [Hashable - Swift Standard Library](https://developer.apple.com/documentation/swift/hashable)
+> 관련 사이트
+>
+> - [http://developer.apple.com/swift](http://developer.apple.com/swift)
+> - [Swift 언어 개발 문서](http://swift.leantra.kr)
+>
+> -  [Hashable - Swift Standard Library](https://developer.apple.com/documentation/swift/hashable)
