@@ -135,3 +135,4 @@ arrayOfInts.append("three")
 >
 > - [http://developer.apple.com/swift](http://developer.apple.com/swift)
 > - [Swift 언어 개발 문서](http://swift.leantra.kr)
+> - [the swift programming languageswift 4.2](https://docs.swift.org/swift-book/)

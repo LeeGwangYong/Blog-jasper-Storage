@@ -89,3 +89,4 @@ if let value13 = dic[13] {
 > - [http://developer.apple.com/swift](http://developer.apple.com/swift)
 > - [Swift 언어 개발 문서](http://swift.leantra.kr)
 > - [Optional - Swift Standard Library](https://developer.apple.com/documentation/swift/optional/)
+> - [the swift programming languageswift 4.2](https://docs.swift.org/swift-book/)

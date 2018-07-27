@@ -32,5 +32,7 @@ Swift의 "primitve" type(Numbers, Boolean etc)의 모두 Struct로 구현되어�
 >
 > - [http://developer.apple.com/swift](http://developer.apple.com/swift)
 > - [Swift 언어 개발 문서](http://swift.leantra.kr)
+> - [the swift programming languageswift 4.2](https://docs.swift.org/swift-book/)
 >
 > -  [Hashable - Swift Standard Library](https://developer.apple.com/documentation/swift/hashable)
+
