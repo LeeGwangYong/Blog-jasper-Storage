@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/seminar.jpg
+coverURL:  "https://ws3.sinaimg.cn/large/006tKfTcgy1fto65y33hcj30nn08rgm6.jpg"
 navigation: True
 title: "NAVER D2 PARTNER'S DAY"
 date: 2018-07-24 00:00:00

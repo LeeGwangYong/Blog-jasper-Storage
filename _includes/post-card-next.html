@@ -4,6 +4,12 @@
             <a class="post-card-image-link" href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}">
                 <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ page.next.cover }})"></div>
             </a>
+        {% else %}
+            {% if page.next.coverURL %}
+                <a class="post-card-image-link" href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}">
+                    <div class="post-card-image" style="background-image: url({{ page.next.coverURL }})"></div>
+                </a>
+            {% endif %}
         {% endif %}
         <div class="post-card-content">
             <a class="post-card-content-link" href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}">

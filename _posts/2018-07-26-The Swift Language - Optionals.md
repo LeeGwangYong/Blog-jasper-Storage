@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/aaron.jpg
 navigation: True
 title: "The Swift Language - Optionals"
-date: 2018-07-26 00:00:00
+date: 2018-07-26 12:00:00
 tags: [Aaron Hillegass, Development, iOS]
 class: post-template
 subclass: 'post tag-aaron-hillegass'
@@ -88,3 +88,4 @@ if let value13 = dic[13] {
 >
 > - [http://developer.apple.com/swift](http://developer.apple.com/swift)
 > - [Swift 언어 개발 문서](http://swift.leantra.kr)
+> - [Optional - Swift Standard Library](https://developer.apple.com/documentation/swift/optional/)

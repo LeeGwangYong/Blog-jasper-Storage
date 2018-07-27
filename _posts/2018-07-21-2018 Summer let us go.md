@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/seminar.jpg
+coverURL: "https://ws3.sinaimg.cn/large/006tKfTcgy1fto5y1rgmbj30m80ci74w.jpg"
 navigation: True
 title: "let us: Go! 2018 Summer 노트"
 date: 2018-07-21 00:00:00
@@ -11,9 +11,7 @@ subclass: 'post tag-seminar'
 author: leegwangyong
 ---
 
-행사일정
-
-![image-20180721130817122](https://ws2.sinaimg.cn/large/006tNc79gy1fthfw4j6akj31kw11xjvw.jpg){: width="100%" height="100%"}
+행사일정![image-20180721130817122](https://ws2.sinaimg.cn/large/006tNc79gy1fthfw4j6akj31kw11xjvw.jpg){: width="100%" height="100%"}
 
 ------
 

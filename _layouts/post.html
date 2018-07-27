@@ -42,9 +42,15 @@ into the {body} of the default.hbs template -->
             </header>
 
             {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
-            </figure>
+            	<figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
+            	</figure>
+            {% else %}
+            	{% if page.coverURL %}
+            		<figure class="post-full-image" style="background-image: url({{ page.coverURL }})">
+            		</figure>
+            	{% endif %}
             {% endif %}
+
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
@@ -127,13 +133,20 @@ into the {body} of the default.hbs template -->
                       {% endif %}
                   {% endif %}
                 {% endfor %}
+
+
                 {% if related_posts > 1 %}
                     <article class="read-next-card"
                         {% if site.cover %}
                             style="background-image: url({{ site.baseurl }}{{ site.cover }})"
                         {% else %}
                             {% if page.cover %}
-                                style="background-image: url(url({{ page.cover }})"{% endif %}
+                                style="background-image: url(url({{ page.cover }})"
+                            {% else %}
+                            	{% if page.cover %}
+                                	style="background-image: url({{ page.coverURL }})"
+                                {% endif %}
+                            {% endif %}
                         {% endif %}
                     >
                         <header class="read-next-card-header">
