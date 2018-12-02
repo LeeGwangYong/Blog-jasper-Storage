@@ -7,11 +7,11 @@ title: "NAVER CSS(Clova Speech Synthesis) Example"
 date: 2018-08-01 00:00:00
 tags: [Development, iOS]
 class: post-template
-subclass: 'post tag-aaron-hillegass'
+subclass: 'post tag-development'
 author: leegwangyong
 ---
 
-# NAVER CSS(Clova Speech Synthesis) Example
+# NAVER CSS(Clova Speech Synthesis) Swift Example
 
 ##### [GitHub Sample](https://github.com/LeeGwangYong/NAVER-CSS-Clova-Speech-Synthesis)
 
@@ -121,11 +121,18 @@ CSS를 좀더 사용해보기 위해 **속도 조절**, **언어 선택**, **성
 
 [![Thumbnail](https://img.youtube.com/vi/D-VcKwPoCSw/0.jpg)](https://www.youtube.com/watch?v=D-VcKwPoCSw)
 
-> 참고 사이트
+
+
+참고 사이트
+
+> [NAVER CLOUD PLATFORM 사용자 가이드](http://docs.ncloud.com/ko/)
 >
-> - [NAVER CLOUD PLATFORM 사용자 가이드](http://docs.ncloud.com/ko/)
-> - [http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-2-2.html](http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-2-2.html)
-> - [http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-4-2.html](http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-4-2.html)
-> - [https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html)
-> - [https://developer.apple.com/documentation/uikit/uipickerview](https://developer.apple.com/documentation/uikit/uipickerview)
-> - [https://developer.apple.com/documentation/uikit/uislider
+> [http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-2-2.html](http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-2-2.html)
+>
+> [http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-4-2.html](http://docs.ncloud.com/ko/naveropenapi_v2/naveropenapi-4-2.html)
+>
+> [https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html)
+>
+> [https://developer.apple.com/documentation/uikit/uipickerview](https://developer.apple.com/documentation/uikit/uipickerview)
+>
+> https://developer.apple.com/documentation/uikit/uislider
