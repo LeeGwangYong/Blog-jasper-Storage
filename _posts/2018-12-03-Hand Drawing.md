@@ -36,6 +36,7 @@ Responder는 raw event data를 받고 event를 처리하거나 다른 responder 
 >If the window cannot handle the event, UIKit delivers the event to the `UIApplication` object, and possibly to the app delegate if that object is an instance of `UIResponder` and not already part of the responder chain.
 ### Determining an Event's First Responder
 UIKit은 event의 유형에 따라 object를 *the first responder*로 임명합니다.
+
 | Event Type | First Responder |
 | -- | -- |
 | Touch events | Touch가 발생한 View |
