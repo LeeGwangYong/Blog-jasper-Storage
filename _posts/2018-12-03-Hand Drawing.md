@@ -8,11 +8,8 @@ title: "iOS Hand Drawing Apple Documentation"
 date: 2018-12-3 00:00:00
 tags: [Development, iOS]
 class: post-template
-subclass: 'post tag-development'
-author: leegwangyong
-
----
-# [Touches, Presses, and Gestures](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures)
+subclass: 'post tag-
+ # [Touches, Presses, and Gestures](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures)
 앱의 gesture recognizer에 대한 event-handling logic을 캡슐화함으로써,  앱 전반적으로 해당 코드를 재사용할 수 있습니다.
 However, if you use custom views to display your content, you must handle all touch events that occur in your views. There are two ways to handle touch events yourself.
 만약, cutom view를 사용한다면,  view에서 발생하는 touch event들에 대해서 모두 처리를 해야합니다.
@@ -47,14 +44,13 @@ UIKit은 event의 유형에 따라 object를 *the first responder*로 임명합�
 
 Accelerometers, gyroscopes, magnetometer과 연관된 Motion event들은 responder chain을 따르지 않습니다. 대신, Core Motion은 이 event들을 임명된 object들로 직접적으로 전달합니다. ( [Core Motion Framework](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW27) )
  
- Control들은 연관된 target object와 action message를 이용하여 직접   
-통신합니다. 사용자가 Control과 상호작용할 때, Control은 target object에 action message를 보냅니다.
+ Control들은 연관된 target object와 action message를 이용하여 직접접 통신합니다. 사용자가 Control과 상호작용할 때, Control은 target object에 action message를 보냅니다.
 Action Message는 event가 아니지만, responder chain을 활용할 수 있습니다.
 Control의 target object가 `nil`일 경우, UIKit은 target object에서 시작하여 적절한 action method를 구현하는 object를 찾을때 까지 responder chain을 가로지릅니다. 예를 들어, UIKit editing menu는 이 동작을 사용하여 `cut(_:)`, `copy(_:)`, `past(_:)`와 같은 method를 구현하는 responder object를 찾습니다.
 
 
 
-# Reference
+# Referenceseminar
 - Apple Documentation
 	- [Touches, Presses, and Gestures](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures)
 		- [Using Responders and the Responder Chain to Handle Events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events)
