@@ -1,4 +1,4 @@
-# Jekyll configuration
+ㅋ걸# Jekyll configuration
 markdown: kramdown
 # kramdown : markdown의 개조판.
 # markdown에서 불편한 사항을 개선한 형태.
@@ -45,7 +45,7 @@ favicon: assets/images/favicon.jpg
 production_url: https://LeeGwangYong.github.io/
 # 최종적으로 blog가 운영될 url
 
-source_url: https://LeeGwangYong.github.io/
+source_url: https://github.com/LeeGwangYong/Blog-jasper-Storage
 # blogmaker(jekyll source folder)에 대한 github repository
 
 # Social info
@@ -94,8 +94,8 @@ feed:
 safe: False
 lsi: False
 
-username: leegwangyong
-repo: https://LeeGwangYong.github.io/
+username: LeeGwangYong
+repo: Blog-jasper-Storage
 # username : travis-ci와 연동하는 github의 username
 # repo: travis-ci와 연동하는 github의 repository이름
 # https://github.com/<username>/<repository>
@@ -113,7 +113,7 @@ destination: ./output/
 # github repository(https://username.github.io)에 연결해야 한다.
 
 production_url:  https://LeeGwangYong.github.io/
-source_url:  https://LeeGwangYong.github.io/
+source_url:  https://github.com/LeeGwangYong/Blog-jasper-Storage
 
 # exclude는 Jekyll컴파일 시 destination에 포함될 필요가
 # 없는것들을 명시한다. (node_modules는 포함시키자)
