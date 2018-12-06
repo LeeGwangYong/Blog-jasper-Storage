@@ -7,11 +7,12 @@ rvm:
 install:
   # Install Jekyll and dependencies
   - bundle install
+
 before_script:
   - git config --global user.email "rhkdrmfh@gmail.com"
   - git config --global user.name "LeeGwangYong"
 
-script: bundle exec rake deploy
+script: bundle exec rake site:deploy --quiet #--trace
 
 # Generate your secure token with the travis gem:
 # get Github token from your Travis CI profile page
