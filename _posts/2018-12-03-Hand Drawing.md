@@ -96,6 +96,7 @@ Responder Object의 [`next`](https://developer.apple.com/documentation/uikit/uir
 	- 만약 viewController가 다른 viewController에 의하여 presented됬다면, 다음 responder는 presenting viewController입니다.
 - `UIWindow` : winodw의 다음 responder는 `UIApplication` object입니다.
 - `UIApplication` : 만약 appDelegate가 `UIResponder`의 instance이고, view, viewcontroller 또는 app object 자체가 아닌 경우에는, 다음 responder는 appDelegate입니다.
+- 
 ```mermaid
 graph TD
 view[UIView]
