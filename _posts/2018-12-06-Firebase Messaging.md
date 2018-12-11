@@ -1,5 +1,16 @@
+---
+layout: post
+current: post
+coverURL:  https://firebase.google.com/docs/cloud-messaging/images/messaging-overview.png
+navigation: True
+title: "Firebase Cloud Messaging (feat. Postman)"
+date: 2018-12-06 00:00:00
+tags: [Development]
+class: post-template
+subclass:  'post tag-development'
+author: leegwangyong
 
-# Firebase Cloud Messaging (feat. Postman)
+---
 
 Silent Notification은 Background에 있는 app을 깨울 수 있습니다. 이를 이용하여, Foreground가 아닌 상태에서도 app 내부의 로직을 수행시킬 수 있습니다. 
 Silent Notification으로 만들기 위해서는 `"content_available" : 1`  를 담아주어야합니다.
