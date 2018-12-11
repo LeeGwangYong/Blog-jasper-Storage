@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/ios.png
 navigation: True
-title: "iOS Hand Drawing Apple Documentation"
+title: "Touches, Presses, and Gestures & Using Responders and the Responder Chain to Handle Events"
 date: 2018-12-3 00:00:00
 tags: [Development, iOS]
 class: post-template
@@ -45,6 +45,7 @@ Responder는 raw event data를 받고 event를 처리하거나 다른 responder 
 2. Event를 window로 바로 보내기 전에, root view에서는 responder chain이 event를 ViewController로 우회시킵니다.
 3. 만약 Window가 event를 처리하지 못한다면, `UIKit`은 `UIApplication` object로 event를 전달합니다. 그리고, 해당 object가 `UIResponder`의 instance이고 아직 responder chain의 일부가 아니라면,  `UIApplicationDelegate`에 전달합니다.
 
+![Responder Chain](http://d33wubrfki0l68.cloudfront.net/1dc3a853f81e9c3addb07de969b95d973d078b3f/0e4b2/images/hit-test-touch-event-flow.png)
 
 ### Determining an Event's First Responder
 
@@ -70,7 +71,7 @@ Gesture recognizers는 touch와 press event를 view가 받기 전에 받습니�
 graph TD
 event(Touch&Press Event)
 gesture(UIGestureRecognizer)
-view(UIView)
+view[UIView]
 responderChain(Responder Chain)
 event-->gesture
 gesture--If fail to recognize a sequence of touches-->view
@@ -82,7 +83,31 @@ view--If view does not handle the touches-->responderChain
 UIKit은 touch event가 어디서 발생했는 지를 결정하기 위하여 view-based hit-testing을 이용합니다. UIKit은 view hierarchy 내의 view objects의 범위에서 touch location을 비교합니다.  `UIView` 의 method인 [`hitTest(_:with:)`](https://developer.apple.com/documentation/uikit/uiview/1622469-hittest)는 지정된 touch를 포함하는 가장 깊은 subview( touch event의 first responder )를 찾기 위하여 view hierarchy를 순회합니다.  
 > 만약 touch location이 view 범위를 벗어나면, `hitTest(_:with:)` 는 view와 모든 subview를 무시합니다. 결과적으로 view의 `clipsToBounds`가 `false`일 때,  해당 view의 범위를 벗어난 subview 영역은  반환되지 않습니다.
 
+Touch가 발생했을 때, `UIKit`은 `UITouch` object를 생성하고, view와 연관시킵니다. Touch Location 혹은 다른 Parameter들이 변화하면, `UIKit`은 동일한 `UITouch` object를 새로운 정보로 업데이트시킵니다. 해당 view만이 변하지 않는 유일한 property입니다. (Touch Location이 원래 view의 바깥으로 이동하더라도, Touch의 view 속성값은 변하지 않습니다.) touch가 종료될 때, `UIKit`은 `UITouch` object를 해제합니다.
 
+### Altering the Responder Chain
+
+Responder Object의 [`next`](https://developer.apple.com/documentation/uikit/uiresponder/1621099-next) property를 overriding하여 responder chain을 변경할 수 있습니다. 이렇게 하면, 다음 responder는 return하는 object입니다.
+
+많은 `UIKit` class들이 이미 이 property를 override하고 특정 object를 return합니다.
+- `UIView` : 만약 view가 viewController의 root view일 경우, 다음 responder는 viewController입니다. 그렇지 않다면, 다음 responder는 view의 superView입니다.
+- `UIViewController` 
+	- 만약 viewController의 view가 window의 root view라면, 다음 responder는 window object입니다.
+	- 만약 viewController가 다른 viewController에 의하여 presented됬다면, 다음 responder는 presenting viewController입니다.
+- `UIWindow` : winodw의 다음 responder는 `UIApplication` object입니다.
+- `UIApplication` : 만약 appDelegate가 `UIResponder`의 instance이고, view, viewcontroller 또는 app object 자체가 아닌 경우에는, 다음 responder는 appDelegate입니다.
+```mermaid
+graph TD
+view[UIView]
+superView[UIView's SuperView]
+viewController[UIViewController]
+view--"root view"-->viewController
+view-->superView
+viewController--"view is window's root view"-->UIWindow
+viewController--"presented"-->PresentingViewController
+UIWindow-->UIApplication
+UIApplication--"instance of UIResponder, not a view, view controller, or the app object itself."-->appDelegate
+```
 
 # Reference
 
@@ -93,5 +118,7 @@ UIKit은 touch event가 어디서 발생했는 지를 결정하기 위하여 vie
 		-  Track the touches directly in your [Handling Touches in Your View](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view).
 	- [Advanced Touch Input on iOS (2015)](https://developer.apple.com/videos/play/wwdc2015/233/)
 	- [Leveraging Touch Input on iOS (2016)](https://developer.apple.com/videos/play/wwdc2016/220)
+- Others
+	- [http://smnh.me/hit-testing-in-ios/](http://smnh.me/hit-testing-in-ios/)
 
 
