@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/ios.png
 navigation: True
-title: "# Handling Touches in Your View"
+title: "Handling Touches in Your View"
 date: 2018-12-10 00:00:00
 tags: [Development, iOS, Apple Developer Documentation]
 class: post-template
@@ -42,5 +42,8 @@ UIKit은 화면에 터치한 각각의 새로운 손가락에 대하여 새로�
 
 # Reference
 
-- Apple Documentation
-		-  Track the touches directly in your [Handling Touches in Your View](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view). 
+- Apple Developer Documentation
+	-  [Handling Touches in Your View](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view). 
+	- [Getting High-Fidelity Input with Coalesced Touches](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches)
+	- [Minimizing Latency with Predicted Touches](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/minimizing_latency_with_predicted_touches)
+	- [Implementing a Multitouch App](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/implementing_a_multitouch_app)
