@@ -5,7 +5,7 @@ cover:  assets/images/ios.png
 navigation: True
 title: "Touches, Presses, and Gestures & Using Responders and the Responder Chain to Handle Events"
 date: 2018-12-3 00:00:00
-tags: [Development, iOS]
+tags: [Development, iOS, Apple Developer Documentation]
 class: post-template
 subclass:  'post tag-development'
 author: leegwangyong
